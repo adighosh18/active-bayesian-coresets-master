@@ -1,6 +1,9 @@
-Method implemented is ..\experiments\torchvision_active_projections.py
+Method implemented is ..\torchvision_active_projections.py
 
 Please run the main function in the file mentioned above.
+
+You may also run through command line using command "Python torchvision_active_projections.py --dataset=dataset_name --budget=budget --batch_size=batch_size"
+where dataset_name can be "cifar10", "cifar100", "mnist", "fashionmnist", "svhn" etc.
 
 Default dataset used is MNIST.
 
@@ -14,8 +17,18 @@ You may change these parameters in the code.
 
 Library Environment requirements:
 
-Python >= 3.5 torch >= 1.0 torchvision >= 0.2.2 numpy scipy sklearn pandas matplotlib gtimer
+<ul>
+  <li>Python >= 3.5</li>
+  <li> torch >= 1.0 </li>
+  <li>torchvision >= 0.2.2 </li>
+  <li>numpy </li>
+  <li>scipy </li>
+  <li>sklearn </li>
+  <li>pandas </li>
+  <li>matplotlib </li>
+  <li>gtimer
+</ul>
 
-Output is a .csv file named after dataset, stored in ..\experiments\experiments\projections\
+Output is a .csv file named after dataset, stored in ..\experiments\projections\
 
 It stores "number of queried datapoints", "accuracy" and "duration of iteration in seconds"
