@@ -48,7 +48,7 @@ parser.add_argument("--pretrained_model", dest="pretrained_model", default=False
 
 if __name__ == '__main__':
     args = parser.parse_args()
-    utils.set_gpu_mode(True)
+    utils.set_gpu_mode(False)
     np.random.seed(args.seed)
     torch.manual_seed(args.seed)
 
